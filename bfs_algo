@@ -1,0 +1,19 @@
+   Set all nodes to "not visited";
+
+   q = new Queue();
+
+   q.enqueue(initial node);
+
+   while ( q ≠ empty ) do
+   {
+      x = q.dequeue();
+
+      if ( x has not been visited )
+      {
+         visited[x] = true;         // Visit node x !
+
+         for ( every edge (x, y)  /* we are using all edges ! */ )    
+            if ( y has not been visited )   
+	       q.enqueue(y);       // Use the edge (x,y) !!!
+      }
+   }

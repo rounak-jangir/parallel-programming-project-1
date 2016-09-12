@@ -1,0 +1,40 @@
+DFS(source):
+  s <- new stack
+  visited <- {} // empty set
+  s.push(source)
+  while (s is not empty):
+    current <- s.pop()
+    if (current is in visited):
+        continue
+    visited.add(current)
+    // do something with current
+    for each node v such that (current,v) is an edge:
+        s.push(v)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DFS(G,v)   ( v is the vertex where the search starts )
+         Stack S := {};   ( start with an empty stack )
+         for each vertex u, set visited[u] := false;
+         push S, v;
+         while (S is not empty) do
+            u := pop S;
+            if (not visited[u]) then
+               visited[u] := true;
+               for each unvisited neighbour w of u
+                  push S, w;
+            end if
+         end while
+      END DFS()

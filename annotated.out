@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------
+I1 cache:         32768 B, 64 B, 8-way associative
+D1 cache:         32768 B, 64 B, 8-way associative
+LL cache:         3145728 B, 64 B, 12-way associative
+Command:          ./serial --branch-sim=yes
+Data file:        cachegrind.out.6013
+Events recorded:  Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Events shown:     Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Event sort order: Ir I1mr ILmr Dr D1mr DLmr Dw D1mw DLmw
+Thresholds:       0.1 100 100 100 100 100 100 100 100
+Include dirs:     
+User annotated:   
+Auto-annotation:  off
+
+--------------------------------------------------------------------------------
+     Ir I1mr ILmr     Dr  D1mr  DLmr     Dw D1mw DLmw 
+--------------------------------------------------------------------------------
+278,584  964  954 72,366 1,278 1,087 40,723  518  480  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+    Ir I1mr ILmr     Dr D1mr DLmr    Dw D1mw DLmw  file:function
+--------------------------------------------------------------------------------
+49,943   68   68 13,158   14   11 7,693   15   14  /build/eglibc-oGUzwX/eglibc-2.19/stdio-common/vfscanf.c:_IO_vfscanf
+41,579   44   44 12,996    2    2 8,723    4    0  /build/eglibc-oGUzwX/eglibc-2.19/stdio-common/vfprintf.c:vfprintf
+22,485   12   12  7,259  171  138 3,464    5    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-lookup.c:do_lookup_x
+19,800    6    6  4,349    1    0 3,216    2    0  /build/eglibc-oGUzwX/eglibc-2.19/libio/fileops.c:_IO_file_xsputn@@GLIBC_2.2.5
+18,460   12   12  3,724   86   81 2,140    3    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-lookup.c:_dl_lookup_symbol_x
+16,315   20   20  3,775  561  541 2,018  251  240  /build/eglibc-oGUzwX/eglibc-2.19/elf/../sysdeps/x86_64/dl-machine.h:_dl_relocate_object
+12,999   12   12  2,017    2    2 1,386    1    0  /build/eglibc-oGUzwX/eglibc-2.19/stdlib/../stdlib/strtol_l.c:____strtol_l_internal
+10,167    1    1  3,034   31   19     0    0    0  /build/eglibc-oGUzwX/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../strcmp.S:strcmp
+ 8,271   12   12  1,968   83   68   116    2    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/do-rel.h:_dl_relocate_object
+ 6,370    5    5  2,210    4    3 1,690    0    0  /build/eglibc-oGUzwX/eglibc-2.19/stdio-common/isoc99_scanf.c:__isoc99_scanf
+ 5,720    2    2    572    0    0     0    0    0  /build/eglibc-oGUzwX/eglibc-2.19/string/../sysdeps/x86_64/strchr.S:strchrnul
+ 5,562    2    2    618    0    0   309    0    0  /build/eglibc-oGUzwX/eglibc-2.19/string/../sysdeps/x86_64/memcpy.S:__GI_mempcpy
+ 4,961    7    7  1,549    0    0   317    2    2  ???:main
+ 4,448    5    5  1,873   32   22   538    2    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-lookup.c:check_match.9481
+ 3,763    6    6  1,024    0    0   575    1    1  /build/eglibc-oGUzwX/eglibc-2.19/libio/fileops.c:_IO_file_overflow@@GLIBC_2.2.5
+ 3,528    2    2  1,512    0    0   504    0    0  /build/eglibc-oGUzwX/eglibc-2.19/libio/genops.c:_IO_sputbackc
+ 3,194    3    3    290    1    1   147    0    0  /build/eglibc-oGUzwX/eglibc-2.19/stdio-common/_itoa.c:_itoa_word
+ 3,003    3    3    429    0    0 1,430    0    0  /build/eglibc-oGUzwX/eglibc-2.19/stdio-common/printf.c:printf
+ 2,408    4    4    904    0    0    72    0    0  ???:bfs
+ 2,408    4    4    904    0    0    72    0    0  ???:dfs
+ 2,226    0    0     13    0    0 2,148   34   34  /build/eglibc-oGUzwX/eglibc-2.19/string/../sysdeps/x86_64/rtld-memset.S:memset
+ 1,476    3    3    489    0    0   108    0    0  /build/eglibc-oGUzwX/eglibc-2.19/libio/genops.c:_IO_default_xsputn
+ 1,430    1    1    780    0    0   130    0    0  /build/eglibc-oGUzwX/eglibc-2.19/stdio-common/../libio/libioP.h:__isoc99_scanf
+ 1,228   13   13    401   10   10   167   14   13  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-version.c:_dl_check_map_versions
+ 1,147   37   37    281    3    3   130   14   14  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-load.c:_dl_map_object_from_fd
+ 1,144    0    0      0    0    0   572    1    0  /build/eglibc-oGUzwX/eglibc-2.19/stdio-common/printf-parse.h:vfprintf
+ 1,076    2    2    278    3    0   160    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-misc.c:_dl_name_match_p
+ 1,055   32   32    224    0    0   115    1    1  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-deps.c:_dl_map_object_deps
+ 1,014    2    2    319    0    0     2    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-minimal.c:strsep
+   996   14   14    251   10   10    76    4    4  /build/eglibc-oGUzwX/eglibc-2.19/string/../string/memcmp.c:bcmp
+   950   70   70    204   21   12   114   11   11  /build/eglibc-oGUzwX/eglibc-2.19/elf/rtld.c:dl_main
+   831    4    4    243    0    0   191    0    0  /build/eglibc-oGUzwX/eglibc-2.19/libio/fileops.c:_IO_do_write@@GLIBC_2.2.5
+   811    4    4    121    8    8     0    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-cache.c:_dl_cache_libcmp
+   810    4    4     87    0    0     0    0    0  /build/eglibc-oGUzwX/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../rtld-strlen.S:strlen
+   710    4    4    119    0    0   117    1    1  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-minimal.c:__libc_memalign
+   612    3    3    136    0    0    85    0    0  /build/eglibc-oGUzwX/eglibc-2.19/libio/fileops.c:_IO_file_write@@GLIBC_2.2.5
+   605   13   13    109    3    3   112   23   23  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-object.c:_dl_new_object
+   566    6    6    206    8    1    63    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/../elf/dl-runtime.c:_dl_fixup
+   555    8    8     96   14   14    47   11   11  /build/eglibc-oGUzwX/eglibc-2.19/elf/get-dynamic-info.h:_dl_map_object_from_fd
+   522   12   12    175   20    1   109    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-reloc.c:_dl_relocate_object
+   487   24   16    385    3    1    31    1    1  ???:???
+   470    6    6     72    0    0    59    6    6  /build/eglibc-oGUzwX/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../memcpy.S:memcpy
+   464   11   11    130   18   16    28    6    6  /build/eglibc-oGUzwX/eglibc-2.19/elf/../elf/dl-sysdep.c:_dl_sysdep_start
+   453    7    7     70    6    6    12    0    0  /build/eglibc-oGUzwX/eglibc-2.19/string/../sysdeps/x86_64/multiarch/../cacheinfo.c:intel_check_word
+   442   25   25     95    1    1    77    4    4  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-load.c:_dl_map_object
+   422    2    2    145   31   31     2    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-environ.c:_dl_next_ld_env_entry
+   378    1    1    252    0    0     0    0    0  /build/eglibc-oGUzwX/eglibc-2.19/stdlib/../stdlib/strtol.c:__strtol_internal
+   377    6    6     54    2    1    39    5    5  /build/eglibc-oGUzwX/eglibc-2.19/string/../sysdeps/x86_64/memcpy.S:mempcpy
+   372    5    5    180    0    0    36    0    0  /build/eglibc-oGUzwX/eglibc-2.19/libio/putchar.c:putchar
+   350    3    3      0    0    0     0    0    0  /build/eglibc-oGUzwX/eglibc-2.19/string/../bits/stdlib-bsearch.h:intel_check_word
+   338   15   15     59    2    2    65    6    6  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-load.c:_dl_init_paths
+   332    3    3      7    0    0   295   37   37  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-tls.c:_dl_allocate_tls_storage
+   318   11   11     72    0    0    53    1    1  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-load.c:open_verify.constprop.6
+   317   14   14    107    0    0    43    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-load.c:open_path
+   308    4    4    119    9    9    36    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-version.c:match_symbol
+   293   16   16     51    7    7    26    0    0  /build/eglibc-oGUzwX/eglibc-2.19/elf/dl-cache.c:_dl_load_cache_lookup
+

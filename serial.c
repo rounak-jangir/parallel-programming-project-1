@@ -12,13 +12,13 @@ void main()
 {
 int n,i,s,ch,j;
 char c,dummy;
-printf("ENTER THE NUMBER VERTICES ");
+// printf("ENTER THE NUMBER VERTICES ");
 scanf("%d",&n);
 for(i=1;i<=n;i++)
 {
 for(j=1;j<=n;j++)
 {
-printf("ENTER 1 IF %d HAS A NODE WITH %d ELSE 0 ",i,j);
+// printf("ENTER 1 IF %d HAS A NODE WITH %d ELSE 0 ",i,j);
 scanf("%d",&a[i][j]);
 }
 }
@@ -36,26 +36,30 @@ do
 {
 for(i=1;i<=n;i++)
 vis[i]=0;
-printf("\nMENU");
-printf("\n1.B.F.S");
-printf("\n2.D.F.S");
-printf("\nENTER YOUR CHOICE");
+// printf("\nMENU");
+// printf("\n1.B.F.S");
+// printf("\n2.D.F.S");
+// printf("\nENTER YOUR CHOICE\n");
 scanf("%d",&ch);
-printf("ENTER THE SOURCE VERTEX :");
+// printf("ENTER THE SOURCE VERTEX :");
 scanf("%d",&s);
 
 switch(ch)
-{
-case 1:bfs(s,n);
+{	
+case 1:
+printf("\nThe result from bfs is as follows: \n");
+bfs(s,n);
 break;
 case 2:
+printf("\nThe result from dfs is as follows: \n");
 dfs(s,n);
 break;
 }
-printf("DO U WANT TO CONTINUE(Y/N) ? ");
+// printf("DO U WANT TO CONTINUE(Y/N) ?\n ");
 scanf("%c",&dummy);
 scanf("%c",&c);
 }while((c=='y')||(c=='Y'));
+printf("\n");
 }
 
 

@@ -1,0 +1,12 @@
+==4065== Callgrind, a call-graph generating cache profiler
+==4065== Copyright (C) 2002-2013, and GNU GPL'd, by Josef Weidendorfer et al.
+==4065== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==4065== Command: ./serial
+==4065== Parent PID: 3510
+==4065== 
+==4065== For interactive control, run 'callgrind_control -h'.
+==4065== 
+==4065== Events    : Ir
+==4065== Collected : 160501418
+==4065== 
+==4065== I   refs:      160,501,418

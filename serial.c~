@@ -115,7 +115,7 @@ bfs(i,n);
 
 void add(int item)
 {
-if(rear==1999)
+if(rear==199)
 printf("QUEUE FULL");
 else
 {
